@@ -1,6 +1,5 @@
 #let project(
     title: "",
-    abstract: [],
     authors:(),
     date: none,
     body
@@ -35,21 +34,12 @@
         ),
     )
 
-pad(
-    x: 2em,
-    top: 1em,
-    bottom: 1.5em,
-    align(center)[
-      #heading(
-        outlined: false,
-        numbering: none,
-        text(0.85em, smallcaps[Abstract]),
-      )
-      #abstract
-    ],
-  )
-
     set par(justify: true)
+
+    text(fill: red)[
+        #outline(depth: 2,indent: true,title: none,fill: none)
+    ]
 
     body
 }
+
